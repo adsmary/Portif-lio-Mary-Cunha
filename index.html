@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="Portfólio de Maryana Cunha - Designer UI/UX e Desenvolvedora Front-End. Projetos, ferramentas e criações digitais.">
+    <meta name="author" content="Maryana Cunha">
+    <title>Maryana Cunha | UI/UX & Front-End</title>
+    <link rel="icon" type="image/png" href="M-ART (1).png">
+    <!-- Google Fonts + Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Botão Modo Escuro/Claro -->
+    <button class="dark-mode-btn" id="darkModeBtn" aria-label="Modo escuro/claro">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Cabeçalho / Navegação Minimalista -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-symbol">✦</span> Maryana Cunha
+            </div>
+            <nav class="nav-links">
+                <a href="#sobre">Sobre</a>
+                <a href="#ferramentas">Ferramentas</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#uiux">UI/UX Mobile</a>
+                <a href="#posts">Posts</a>
+            </nav>
+            <div class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção Sobre Mim -->
+        <section id="sobre" class="section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <img src="WhatsApp Image 2026-04-03 at 20.01.07.jpeg" alt="Maryana Cunha - designer e desenvolvedora" class="profile-img">
+                    </div>
+                    <div class="about-text">
+                        <h1>Sobre mim</h1>
+                        <p>Sou Maryana Cunha, designer com foco em UI/UX e desenvolvedora Front-End, dedicada à criação de interfaces digitais funcionais, intuitivas e alinhadas às boas práticas de usabilidade.</p>
+                        <p>Possuo experiência no desenvolvimento de aplicações web utilizando HTML, CSS e JavaScript, com atenção à responsividade, desempenho e experiência do usuário.</p>
+                        <p>Também atuo na criação de designs para mídias sociais, desenvolvendo peças visuais estratégicas que contribuem para o fortalecimento da identidade digital de marcas e projetos.</p>
+                        <p>Busco constantemente aprimorar minhas habilidades técnicas e criativas, acompanhando tendências e aplicando soluções eficientes no desenvolvimento de produtos digitais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Ferramentas com carrossel infinito + controles -->
+        <section id="ferramentas" class="section tools-section">
+            <div class="container">
+                <h2 class="section-title">Ferramentas</h2>
+                <!-- Controles do Carrossel -->
+                <div class="slider-controls">
+                    <button class="slider-btn slider-prev" id="sliderPrev" aria-label="Anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="tools-slider-container">
+                        <div class="tools-track" id="toolsTrack">
+                            <!-- Ferramentas -->
+                            <div class="tool-item">
+                                <img src="html.png" alt="HTML" class="tool-icon">
+                                <span class="tool-name">HTML</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="css-3.png" alt="CSS" class="tool-icon">
+                                <span class="tool-name">CSS</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="Javas script.png" alt="JavaScript" class="tool-icon">
+                                <span class="tool-name">JavaScript</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="figma.png" alt="Figma" class="tool-icon">
+                                <span class="tool-name">Figma</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="Photopea.webp" alt="photopea" class="tool-icon">
+                                <span class="tool-name">Photopea</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="gimp.png" alt="Gimp" class="tool-icon">
+                                <span class="tool-name">Gimp</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="krita.webp" alt="Krita" class="tool-icon">
+                                <span class="tool-name">Krita</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="canva.png" alt="Canva" class="tool-icon">
+                                <span class="tool-name">Canva</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="world press.png" alt="WordPress" class="tool-icon">
+                                <span class="tool-name">WordPress</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="Wix.png" alt="Wix" class="tool-icon">
+                                <span class="tool-name">Wix</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="alight motion.png" alt="Alight Motion" class="tool-icon">
+                                <span class="tool-name">Alight Motion</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="cap cut.webp" alt="Capcut" class="tool-icon">
+                                <span class="tool-name">Capcut</span>
+                            </div>
+                            <!-- DUPLICADO PARA EFEITO INFINITO -->
+                            <div class="tool-item">
+                                <img src="html.png" alt="HTML" class="tool-icon">
+                                <span class="tool-name">HTML</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="css-3.png" alt="CSS" class="tool-icon">
+                                <span class="tool-name">CSS</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="Javas script.png" alt="JavaScript" class="tool-icon">
+                                <span class="tool-name">JavaScript</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="figma.png" alt="Figma" class="tool-icon">
+                                <span class="tool-name">Figma</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="Photopea.webp" alt="Photopea" class="tool-icon">
+                                <span class="tool-name">Photopea</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="gimp.png" alt="Gimp" class="tool-icon">
+                                <span class="tool-name">Gimp</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="krita.webp" alt="Krita" class="tool-icon">
+                                <span class="tool-name">Krita</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="canva.png" alt="Canva" class="tool-icon">
+                                <span class="tool-name">Canva</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="world press.png" alt="WordPress" class="tool-icon">
+                                <span class="tool-name">WordPress</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="Wix.png" alt="Wix" class="tool-icon">
+                                <span class="tool-name">Wix</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="alight motion.png" alt="Alight Motion" class="tool-icon">
+                                <span class="tool-name">Alight Motion</span>
+                            </div>
+                            <div class="tool-item">
+                                <img src="cap cut.webp" alt="Capcut" class="tool-icon">
+                                <span class="tool-name">Capcut</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="slider-btn slider-next" id="sliderNext" aria-label="Próximo">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                <!-- Indicadores do Carrossel -->
+                <div class="slider-indicators" id="sliderIndicators"></div>
+            </div>
+        </section>
+
+        <!-- Seção Projetos Web -->
+        <section id="projetos" class="section">
+            <div class="container">
+                <h2 class="section-title">Projetos Web</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Kazumi Sushi</h3>
+                        <p>Site institucional para restaurante japonês, design responsivo e cardápio interativo.</p>
+                        <a href="https://adsmary.github.io/Kazumi-sushi/" target="_blank" rel="noopener noreferrer" class="project-btn">Visite o Site <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="project-card">
+                        <h3>História da Moda</h3>
+                        <p>Linha do tempo visual sobre evolução do vestuário, HTML, CSS e layout narrativo.</p>
+                        <a href="https://adsmary.github.io/Historia-da-moda/" target="_blank" rel="noopener noreferrer" class="project-btn">Visite o Site <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="project-card">
+                        <h3>Aumigo Pet</h3>
+                        <p>Plataforma de petshop com foco em adoção, hospedagem e serviços.</p>
+                        <a href="https://adsmary.github.io/Aumigo-pet/" target="_blank" rel="noopener noreferrer" class="project-btn">Visite o Site <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção UI/UX Mobile -->
+        <section id="uiux" class="section uiux-section">
+            <div class="container">
+                <h2 class="section-title">Projeto Design UI/UX Mobile</h2>
+                <p class="uiux-subtitle">Moonbunny App – Conceito de interface moderna e fluida para comunidade criativa</p>
+                <div class="uiux-gallery">
+                    <img src="Apresentação moonbunny.png" alt="Apresentação do app Moonbunny" loading="lazy">
+                    <img src="pagina 1 moonbunny.png" alt="Primeira parte do app - onboarding" loading="lazy">
+                    <img src="pagina 2 moonbunny.png" alt="Segunda parte do app - dashboard" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Posts de Design -->
+        <section id="posts" class="section">
+            <div class="container">
+                <h2 class="section-title">Posts de Design</h2>
+                <div class="posts-grid">
+                    <div class="post-card">
+                        <img src="1.jpg" alt="Post criativo design gráfico" loading="lazy">
+                        <div class="post-overlay">
+                            <span>Design Gráfico</span>
+                        </div>
+                    </div>
+                    <div class="post-card">
+                        <img src="carnaval veneza.png" alt="Post especial café" loading="lazy">
+                        <div class="post-overlay">
+                            <span>Design</span>
+                        </div>
+                    </div>
+                    <div class="post-card jellyfish-card">
+                        <div class="jellyfish-container">
+                            <img src="jellyfish.jpeg" alt="Post abstrato artístico - Água-viva" class="jellyfish-img" loading="lazy">
+                        </div>
+                        <div class="post-overlay">
+                            <span>Arte Digital</span>
+                        </div>
+                    </div>
+                    <div class="post-card">
+                        <img src="Sax & Canela.jpg" alt="Post musical Sax & Canela" loading="lazy">
+                        <div class="post-overlay">
+                            <span>Identidade Visual</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Maryana Cunha • Designer UI/UX & Front-End</p>
+            <div class="footer-links">
+                <a href="https://github.com/adsmary" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/maryana-cunha-32bb27340/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:adsmaryg@gmail.com" aria-label="E-mail">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

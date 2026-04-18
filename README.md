@@ -1,2 +1,2 @@
-# Portif-lio-Mary-Cunha
-Portifólio com projetos de Desing e Desenvolvimento front end
+# Maryana-Cunha-Portifólio
+pertifólio ui ux designer e dev front-end
